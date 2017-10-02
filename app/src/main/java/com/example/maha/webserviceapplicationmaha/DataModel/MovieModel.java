@@ -1,10 +1,12 @@
 package com.example.maha.webserviceapplicationmaha.DataModel;
 
+import java.io.Serializable;
+
 /**
  * Created by Maha on 01/10/2017.
  */
 
-public class MovieModel {
+public class MovieModel implements Serializable {
 
 
     public MovieModel() {
@@ -13,6 +15,7 @@ public class MovieModel {
     int id;
     boolean video;
     long vote_average;
+
     String title,poster_path,original_language,overview, release_date;
 
 
