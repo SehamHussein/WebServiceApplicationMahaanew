@@ -40,6 +40,7 @@ public class Details extends AppCompatActivity {
         overview.setText(movieModel.getOverview());
 
        float rate =(float)movieModel.getVote_average();
+
        rate= rate / 2;
         ratingBar.setRating(rate);
 
