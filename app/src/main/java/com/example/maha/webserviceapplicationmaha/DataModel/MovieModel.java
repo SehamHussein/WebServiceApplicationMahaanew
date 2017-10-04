@@ -14,7 +14,7 @@ public class MovieModel implements Serializable {
 
     int id;
     boolean video;
-    long vote_average;
+    double vote_average;
 
     String title,poster_path,original_language,overview, release_date;
 
@@ -35,11 +35,11 @@ public class MovieModel implements Serializable {
         this.video = video;
     }
 
-    public long getVote_average() {
+    public double getVote_average() {
         return vote_average;
     }
 
-    public void setVote_average(long vote_average) {
+    public void setVote_average(double vote_average) {
         this.vote_average = vote_average;
     }
 
